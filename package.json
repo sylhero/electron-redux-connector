@@ -1,0 +1,52 @@
+{
+  "name": "electron-redux-connector",
+  "version": "1.0.0",
+  "description": "electron redux connector",
+  "main": "./build/electron-redux-connector.min.js",
+  "scripts": {
+    "lint": "eslint --fix --ext js --ext jsx src",
+    "clean": "rimraf build",
+    "build": "npm run clean && webpack --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "reactjs",
+    "webpack",
+    "redux",
+    "electron"
+  ],
+  "author": "Yulong Song",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "esformatter": "^0.10.0",
+    "esformatter-jsx": "^8.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "rimraf": "^2.6.1",
+    "stats-webpack-plugin": "^0.6.0",
+    "webpack": "^2.5.0"
+  },
+  "dependencies": {
+    "electron": "^1.6.10",
+    "electron-rpc": "^2.0.1"
+  }
+}
