@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 
 var rules = [{
@@ -56,14 +56,8 @@ module.exports = {
                 NODE_ENV: JSON.stringify('production')
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-                screw_ie8: true,
-                drop_console: true,
-                drop_debugger: true
-            }
-        }),
+        new MinifyPlugin(),
+        new webpack.optimize.ModuleConcatenationPlugin(),
         new webpack.optimize.AggressiveMergingPlugin()
     ],
     performance: {

@@ -18,4 +18,4 @@ const createERCMiddleware = (prefix) => {
 };
 
 export default createERCMiddleware;
-/*eslint-enable */
+/* eslint-enable */
