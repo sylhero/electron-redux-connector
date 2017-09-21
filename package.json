@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/sylhero/electron-redux-connector"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
