@@ -6,8 +6,7 @@
   "scripts": {
     "lint": "eslint --fix --ext js --ext jsx src",
     "clean": "rimraf build",
-    "build": "npm run clean && webpack --config ./webpack.config.js",
-    "postinstall": "npm rebuild node-sass && electron-rebuild"
+    "build": "npm run clean && webpack --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -51,7 +50,6 @@
     "webpack": "^3.5.5"
   },
   "dependencies": {
-    "electron": "^1.7.6",
-    "electron-rpc": "^2.0.1"
+    "electron": "^1.7.6"
   }
 }

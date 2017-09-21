@@ -1,14 +1,11 @@
-import Client from 'electron-rpc/client';
-// import MiddlewareConstant from './MiddlewareConstant';
-
+import client from './client';
 /*eslint-disable */
-const client = new Client();
-const createERCMiddleware = (prefix) => {
+const electronRedux = (prefix) => {
     return (store) => {
         return (next) => {
             return (action) => {
                 if (action.type && action.type.includes(prefix)) {
-                    client.request(action.type, ...action.data);
+                    client.send(action.type, {...action.payload});
                     return;
                 }
                 next(action);
@@ -17,5 +14,5 @@ const createERCMiddleware = (prefix) => {
     };
 };
 
-export default createERCMiddleware;
+export default electronRedux;
 /* eslint-enable */

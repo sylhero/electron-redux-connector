@@ -48,8 +48,7 @@ module.exports = {
         rules
     },
     externals: {
-        'electron': 'electron',
-        'electron-rpc': 'electron-rpc'
+        'electron': 'electron'
     },
     plugins: [
         new webpack.DefinePlugin({

@@ -1,14 +1,14 @@
-import createERCMiddleware from './createERCMiddleware';
-import ElectronEventHandler from './ElectronEventHandler';
-import reduxEventHandler from './reduxEventHandler';
+import client from './client';
+import server from './server';
+import electronRedux from './electronRedux';
 
-const ElectronReduxConnector = {
-    createERCMiddleware,
-    ElectronEventHandler,
-    reduxEventHandler
+const electronReduxConnector = {
+    client,
+    server,
+    electronRedux
 };
 
 export {
-    ElectronReduxConnector as
-    default, createERCMiddleware, ElectronEventHandler, reduxEventHandler
+    electronReduxConnector as
+    default, client, server, electronRedux
 };
