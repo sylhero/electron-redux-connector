@@ -24,7 +24,7 @@ const removeAllListeners = (event) => {
     ipcRenderer.removeAllListeners(event);
 };
 
-const Client = {
+const client = {
     listen,
     listenOnce,
     send,
@@ -33,5 +33,5 @@ const Client = {
     removeAllListeners
 };
 
-export default Client;
+export default client;
 

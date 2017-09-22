@@ -1,6 +1,6 @@
 {
   "name": "electron-redux-connector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "electron redux connector",
   "main": "./build/electron-redux-connector.min.js",
   "scripts": {
